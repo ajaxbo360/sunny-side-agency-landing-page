@@ -1,68 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <img
+      class="header-img"
+      src="images/mobile/image-header.jpg"
+      srcset="
+        images/mobile/image-header.jpg  1024w,
+        images/desktop/image-header.jpg
+      "
+      alt="hero image"
+    />
+    <header>
+      <nav class="wrapper">
+        <div class="logo">
+          <a href="/">
+            <img src="images/logo.svg" alt="" />
+          </a>
+        </div>
+        <!-- hamburger menu-->
+        <div class="hamburger-menu hide-for-desktop">
+          <img src="images/icon-hamburger.svg" alt="hamburger-menu" />
+        </div>
+        <ul class="menu hide-for-mobile">
+          <li><a href="#About">About</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#Projects">Projects</a></li>
+        </ul>
+        <a href="" class="menu-btn hide-for-mobile">Contact</a>
+      </nav>
+      <!-- toggle menu -->
+      <div class="hide-for-desktop">
+        <div class="toggle-menu">
+          <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Projects">Projects</a></li>
+          </ul>
+          <a href="" class="toggle-menu-btn"><strong>Contact</strong></a>
+        </div>
+      </div>
+    </header>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  About
-  Services
-  Projects
-  Contact
+    <!-- Hero -->
 
-  We are creatives
+    <section class="hero">
+      <h1 class="hero__heading">We are <span>creatives</span></h1>
 
-  Transform your brand
+      <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow-down" />
+    </section>
 
-  We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
+    <!-- Feature Section-->
 
-  Learn more
+    <section id="About" class="feature">
+      <div class="feature__one">
+        <div class="feature__one__img">
+          <img
+            src="images/mobile/image-transform.jpg"
+            srcset="
+              images/mobile/image-transform.jpg  640w,
+              images/desktop/image-transform.jpg
+            "
+            alt=""
+          />
+        </div>
+        <div class="feature__one__content wrapper">
+          <h1 class="feature__one__content__heading">Transform your brand</h1>
+          <p class="feature__one__content__body">
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+          <a href="" class="feature__one__content__link">learn more</a>
+        </div>
+      </div>
+      <div class="feature__two">
+        <div class="feature__two__img">
+          <img
+            src="images/mobile/image-stand-out.jpg"
+            srcset="
+              images/mobile/image-stand-out.jpg  640w,
+              images/desktop/image-stand-out.jpg
+            "
+            alt=""
+          />
+        </div>
+        <div class="feature__two__content wrapper">
+          <h1 class="feature__two__content__heading">
+            Stand out to the right audience
+          </h1>
+          <p class="feature__two__content__body">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
+          </p>
+          <a href="" class="feature__two__content__link">learn more</a>
+        </div>
+      </div>
+    </section>
 
-  Stand out to the right audience
+    <!-- Showcase Section-->
+    <section id="Services" class="showcase">
+      <div class="showcase__one">
+        <img
+          src="images/mobile/image-graphic-design.jpg"
+          srcset="
+            images/mobile/image-graphic-design.jpg  640w,
+            images/desktop/image-graphic-design.jpg
+          "
+          alt=""
+        />
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+        <h1 class="showcase__one__heading">Graphic Design</h1>
+        <p class="showcase__one__body">
+          Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential clients’ attention.
+        </p>
+      </div>
 
-  Learn more
+      <div class="showcase__two">
+        <img
+          src="images/mobile/image-photography.jpg"
+          srcset="
+            images/mobile/image-photography.jpg  640w,
+            images/desktop/image-photography.jpg
+          "
+          alt=""
+        />
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+        <h1 class="showcase__two__heading">Photography</h1>
+        <p class="showcase__two__body">
+          Increase your credibility by getting the most stunning, high-quality
+          photos that improve your business image.
+        </p>
+      </div>
+    </section>
+    <!-- Testimonials Section-->
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+    <section class="testimonials">
+      <h2 class="testimonials__heading">Client testimonials</h2>
+      <div class="testimonials__one">
+        <img src="images/image-emily.jpg" alt="" />
 
-  Client testimonials
+        <p class="testimonials__one__body">
+          We put our trust in Sunnyside and they delivered, making sure our
+          needs were met and deadlines were always hit.
+        </p>
+        <div class="testimonials__one__author">
+          <h3>Emily R.</h3>
+          <p>Marketing Director</p>
+        </div>
+      </div>
+      <div class="testimonials__two">
+        <img src="images/image-thomas.jpg" alt="" />
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
+        <p class="testimonials__two__body">
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+          success made it a satisfying and enjoyable experience.
+        </p>
+        <div class="testimonials__two__author">
+          <h3>Thomas S.</h3>
+          <p>Chief Operating Officer</p>
+        </div>
+      </div>
+      <div class="testimonials__three">
+        <img src="images/image-jennie.jpg" alt="" />
 
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
+        <p class="testimonials__three__body">
+          Incredible end result! Our sales increased over 400% when we worked
+          with Sunnyside. Highly recommended!
+        </p>
+        <div class="testimonials__three__author">
+          <h3>Jennie F.</h3>
+          <p>Business Owner</p>
+        </div>
+      </div>
+    </section>
 
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
+    <!-- Gallery -->
+    <section id="Projects" class="gallery">
+      <div class="gallery__grid">
+        <img
+          src="images/mobile/image-gallery-milkbottles.jpg"
+          alt=""
+          srcset="
+            images/mobile/image-gallery-milkbottles.jpg  640w,
+            images/desktop/image-gallery-milkbottles.jpg
+          "
+        />
+      </div>
+      <div class="gallery__grid">
+        <img
+          src="images/mobile/image-gallery-orange.jpg"
+          alt=""
+          srcset="
+            images/mobile/image-gallery-orange.jpg  640w,
+            images/desktop/image-gallery-orange.jpg
+          "
+        />
+      </div>
+      <div class="gallery__grid">
+        <img
+          src="images/mobile/image-gallery-cone.jpg "
+          alt=""
+          srcset="
+            images/mobile/image-gallery-cone.jpg  640w,
+            images/desktop/image-gallery-cone.jpg
+          "
+        />
+      </div>
+      <div class="gallery__grid">
+        <img
+          src="images/mobile/image-gallery-sugar-cubes.jpg"
+          alt=""
+          srcset="
+            images/mobile/image-gallery-sugar-cubes.jpg 640w,
+            images/desktop/image-gallery-sugarcubes.jpg
+          "
+        />
+      </div>
+    </section>
 
-  About
-  Services
-  Projects
-  Contact
+    <!-- footer -->
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="footer">
+      <div class="footer__logo">
+        <img src="images/logo-footer.svg" alt="" />
+      </div>
+      <div class="footer__links">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+      </div>
+
+      <div class="footer__social__links">
+        <a href=""><img src="images/icon-facebook.svg" alt="facebook" /></a>
+        <a href=""><img src="images/icon-instagram.svg" alt="instagram" /></a>
+        <a href=""> <img src="images/icon-twitter.svg" alt="twitter" /></a>
+
+        <a href=""><img src="images/icon-pinterest.svg" alt="pinterest" /></a>
+      </div>
+    </footer>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+    ></script>
+    <script src="app/js/main.js"></script>
+  </body>
 </html>
