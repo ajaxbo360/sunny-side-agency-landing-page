@@ -232,12 +232,12 @@ body .hero .hero__heading span {
 }
 @media (min-width: 40em) {
   body .hero .hero__heading span {
-    font-size: 1.9rem;
+    font-size: 2.9rem;
   }
 }
 @media (min-width: 64em) {
   body .hero .hero__heading span {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 }
 @media (min-width: 87.5em) {
@@ -247,14 +247,14 @@ body .hero .hero__heading span {
 }
 @media (min-width: 40em) {
   body .hero .hero__heading {
-    font-size: 1.9rem;
+    font-size: 2.9rem;
     width: 30ch;
     letter-spacing: 5px;
   }
 }
 @media (min-width: 64em) {
   body .hero .hero__heading {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     width: 30ch;
     letter-spacing: 5px;
   }
@@ -274,7 +274,7 @@ body .hero img {
 }
 @media (min-width: 40em) {
   body .hero img {
-    top: 644% !important;
+    top: 261% !important;
   }
 }
 @media (min-width: 64em) {
@@ -291,7 +291,7 @@ body .hero img {
 }
 @media (min-width: 40em) {
   body .hero {
-    top: 4%;
+    top: 6%;
   }
 }
 @media (min-width: 64em) {
@@ -312,7 +312,6 @@ body .feature {
 body .feature__one {
   display: flex;
   flex-direction: column;
-  max-width: 100%;
 }
 @media (min-width: 64em) {
   body .feature__one {
@@ -320,16 +319,18 @@ body .feature__one {
     flex-direction: row-reverse;
   }
 }
-body .feature__one__img {
-  max-width: 100%;
-}
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   body .feature__one__img {
     min-width: 50%;
   }
 }
 body .feature__one__img img {
-  min-width: 100%;
+  max-width: 100%;
+}
+@media (min-width: 40em) {
+  body .feature__one__img img {
+    min-width: 100%;
+  }
 }
 @media (min-width: 64em) {
   body .feature__one__img img {
@@ -424,7 +425,6 @@ body .feature__one__content__link:hover::after {
   background-color: hsl(51deg, 100%, 49%);
 }
 body .feature__two {
-  max-width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -441,11 +441,11 @@ body .feature__two {
   }
 }
 body .feature__two__img img {
-  min-width: 100%;
+  max-width: 100%;
 }
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   body .feature__two__img img {
-    max-width: 100%;
+    min-width: 100%;
   }
 }
 body .feature__two__content {
@@ -555,24 +555,23 @@ body .showcase__one {
   }
 }
 body .showcase__one img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
 }
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   body .showcase__one img {
-    width: 100%;
+    min-width: 100%;
   }
 }
 body .showcase__one__heading {
   position: absolute;
   font-size: 1.7rem;
   top: 33%;
-  left: 22%;
+  left: 19%;
   color: hsl(167deg, 40%, 24%);
 }
 @media (min-width: 40em) {
   body .showcase__one__heading {
-    left: 36%;
+    left: 32%;
   }
 }
 @media (min-width: 64em) {
@@ -601,6 +600,13 @@ body .showcase__one__body {
   margin-bottom: 1.3rem;
   color: hsl(213deg, 9%, 39%);
 }
+@media (min-width: 40em) {
+  body .showcase__one__body {
+    left: 9%;
+    font-size: 1.4rem;
+    top: 38%;
+  }
+}
 @media (min-width: 64em) {
   body .showcase__one__body {
     left: 6%;
@@ -628,24 +634,23 @@ body .showcase__two {
   }
 }
 body .showcase__two img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
 }
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   body .showcase__two img {
-    width: 100%;
+    min-width: 100%;
   }
 }
 body .showcase__two__heading {
   position: absolute;
   font-size: 1.7rem;
   top: 83%;
-  left: 27%;
+  left: 23%;
   color: hsl(167deg, 40%, 24%);
 }
 @media (min-width: 40em) {
   body .showcase__two__heading {
-    left: 37%;
+    left: 35%;
   }
 }
 @media (min-width: 64em) {
@@ -673,6 +678,13 @@ body .showcase__two__body {
   display: inline-block;
   margin-bottom: 1.3rem;
   color: hsl(198deg, 62%, 26%);
+}
+@media (min-width: 40em) {
+  body .showcase__two__body {
+    left: 9%;
+    font-size: 1.4rem;
+    top: 87%;
+  }
 }
 @media (min-width: 64em) {
   body .showcase__two__body {

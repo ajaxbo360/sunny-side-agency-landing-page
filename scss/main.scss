@@ -108,6 +108,8 @@ body {
            justify-content: center;
            align-items: center;
 
+
+
            ul li {
             margin-bottom: 2rem;
             text-align: center;
@@ -155,6 +157,14 @@ body {
 
             }
 
+
+                        //  @include b.breakpoints-up(medium) {
+                        //    padding-top: 3%;
+                        //  }
+                        //  @include b.breakpoints-up(medium) {
+                        //    padding-top: 3%;
+                        //  }
+
          }
   }
 
@@ -177,10 +187,10 @@ body {
       span {
         font-size: 2.7rem;
         @include b.breakpoints-up(medium) {
-          font-size: 1.9rem;
+          font-size: 2.9rem;
         }
                 @include b.breakpoints-up(large) {
-                    font-size: 2.5rem;
+                    font-size: 3.5rem;
                     
                 }
                 @include b.breakpoints-up(xlarge) {
@@ -189,12 +199,12 @@ body {
                 }
       }
       @include b.breakpoints-up(medium) {
-        font-size: 1.9rem;
+        font-size: 2.9rem;
         width: 30ch;
         letter-spacing: 5px;
       }
       @include b.breakpoints-up(large) {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         width: 30ch;
         letter-spacing: 5px;
       }
@@ -215,7 +225,7 @@ body {
 
       @include b.breakpoints-up(medium) {
         // height: 100%;
-        top: 644% !important;
+      top: 261% !important;
       }
       @include b.breakpoints-up(large) {
         height: 65px;
@@ -228,7 +238,7 @@ body {
     }
 
     @include b.breakpoints-up(medium) {
-      top: 4%;
+      top: 6%;
     }
     @include b.breakpoints-up(large) {
     top: 5%;
@@ -245,23 +255,27 @@ body {
     margin-top: -4px;
     display: flex;
     flex-direction: column;
+    // max-width: 100%;
   
 
     &__one {
       display: flex;
       flex-direction: column;
-      max-width: 100%;
+      // max-width: 100%;
       @include b.breakpoints-up(large) {
         display: flex;
         flex-direction: row-reverse;
       }
       &__img {
-        max-width: 100%;
-        @include b.breakpoints-up(large) {
+        // max-width: 100%;
+        @include b.breakpoints-up(medium) {
           min-width: 50%;
         }
         img {
-          min-width: 100%;
+          max-width: 100%;
+          @include b.breakpoints-up(medium) {
+              min-width: 100%;
+            }
         @include b.breakpoints-up(large) {
                 min-width: 100%;
         
@@ -363,7 +377,7 @@ body {
       }
     }
     &__two {
-      max-width: 100%;
+      // max-width: 100%;
       display: flex;
       flex-direction: column;
 
@@ -379,11 +393,14 @@ body {
           min-width: 50%;
         }
                 img {
-                  min-width: 100%;
-                    @include b.breakpoints-up(large) {
-                        max-width: 100%;
-        
+                  max-width: 100%;
+                  @include b.breakpoints-up(medium) {
+                      min-width: 100%;
                     }
+                    // @include b.breakpoints-up(large) {
+                    //     min-width: 100%;
+        
+                    // }
                     
                 }
       }
@@ -501,23 +518,25 @@ body {
         width: 100%;
       }
       img {
-        width: 100%;
-        height: 100%;
-        @include b.breakpoints-up(large) {
-        width: 100%;
+      max-width: 100%;
+      @include b.breakpoints-up(medium) {
+          min-width: 100%;
         }
+        // @include b.breakpoints-up(large) {
+        // width: 100%;
+        // }
       }
 
       &__heading {
         position: absolute;
         font-size: 1.7rem;
         top: 33%;
-        left: 22%;
+        left: 19%;
         color: hsl(167deg, 40%, 24%);
 
         
         @include b.breakpoints-up(medium) {
-          left: 36%;
+          left: 32%;
         }
         @include b.breakpoints-up(large) {
           left: 15%;
@@ -547,6 +566,13 @@ body {
         display: inline-block;
         margin-bottom: 1.3rem;
         color: hsl(213deg, 9%, 39%);
+        @include b.breakpoints-up(medium) {
+            left: 9%;
+              font-size: 1.4rem;
+              top: 38%;
+        
+        
+          }
         @include b.breakpoints-up(large) {
                 left: 6%;
                     font-size: 1rem;
@@ -572,22 +598,24 @@ body {
       }
 
       img {
-        width: 100%;
-        height: 100%;
-        @include b.breakpoints-up(large) {
-          width: 100%;
+      max-width: 100%;
+      @include b.breakpoints-up(medium) {
+          min-width: 100%;
         }
+        // @include b.breakpoints-up(large) {
+        //   width: 100%;
+        // }
       }
 
       &__heading {
         position: absolute;
         font-size: 1.7rem;
         top: 83%;
-        left: 27%;
+        left: 23%;
         color: hsl(167deg, 40%, 24%);
 
         @include b.breakpoints-up(medium) {
-          left: 37%;
+          left: 35%;
         }
         @include b.breakpoints-up(large) {
             left: 66%;
@@ -619,6 +647,13 @@ body {
         margin-bottom: 1.3rem;
         color: v.$Primary-Dark-Blue-Photography-Text;
         
+        @include b.breakpoints-up(medium) {
+                left: 9%;
+                  font-size: 1.4rem;
+                  top: 87%;
+                
+        
+            }
         @include b.breakpoints-up(large) {
                 left: 56%;
                     font-size: 1rem;
