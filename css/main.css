@@ -280,7 +280,7 @@ body .hero img {
 @media (min-width: 64em) {
   body .hero img {
     height: 65px;
-    top: 500% !important;
+    top: 280% !important;
   }
 }
 @media (min-width: 87.5em) {
@@ -296,7 +296,7 @@ body .hero img {
 }
 @media (min-width: 64em) {
   body .hero {
-    top: 17%;
+    top: 5%;
   }
 }
 @media (min-width: 87.5em) {
@@ -567,13 +567,8 @@ body .showcase__one__heading {
   position: absolute;
   font-size: 1.7rem;
   top: 33%;
-  left: 19%;
+  left: 22%;
   color: hsl(167deg, 40%, 24%);
-}
-@media (max-width: 63.9375em) {
-  body .showcase__one__heading {
-    left: 29%;
-  }
 }
 @media (min-width: 40em) {
   body .showcase__one__heading {
@@ -645,7 +640,7 @@ body .showcase__two__heading {
   position: absolute;
   font-size: 1.7rem;
   top: 83%;
-  left: 22%;
+  left: 27%;
   color: hsl(167deg, 40%, 24%);
 }
 @media (min-width: 40em) {

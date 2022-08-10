@@ -219,7 +219,7 @@ body {
       }
       @include b.breakpoints-up(large) {
         height: 65px;
-        top: 500% !important;
+        top: 280% !important;
       }
       @include b.breakpoints-up(xlarge) {
         height: 99px;
@@ -231,7 +231,7 @@ body {
       top: 4%;
     }
     @include b.breakpoints-up(large) {
-    top: 17%;
+    top: 5%;
     }
     @include b.breakpoints-up(xlarge) {
       top: 5%;
@@ -512,12 +512,10 @@ body {
         position: absolute;
         font-size: 1.7rem;
         top: 33%;
-        left: 19%;
+        left: 22%;
         color: hsl(167deg, 40%, 24%);
 
-        @include b.breakpoints-down(medium) {
-          left: 29%;
-        }
+        
         @include b.breakpoints-up(medium) {
           left: 32%;
         }
@@ -585,7 +583,7 @@ body {
         position: absolute;
         font-size: 1.7rem;
         top: 83%;
-        left: 22%;
+        left: 27%;
         color: hsl(167deg, 40%, 24%);
 
         @include b.breakpoints-up(medium) {
