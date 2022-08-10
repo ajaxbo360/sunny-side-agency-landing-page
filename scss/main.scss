@@ -517,7 +517,7 @@ body {
 
         
         @include b.breakpoints-up(medium) {
-          left: 32%;
+          left: 36%;
         }
         @include b.breakpoints-up(large) {
           left: 15%;
@@ -587,7 +587,7 @@ body {
         color: hsl(167deg, 40%, 24%);
 
         @include b.breakpoints-up(medium) {
-          left: 35%;
+          left: 37%;
         }
         @include b.breakpoints-up(large) {
             left: 66%;

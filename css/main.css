@@ -572,7 +572,7 @@ body .showcase__one__heading {
 }
 @media (min-width: 40em) {
   body .showcase__one__heading {
-    left: 32%;
+    left: 36%;
   }
 }
 @media (min-width: 64em) {
@@ -645,7 +645,7 @@ body .showcase__two__heading {
 }
 @media (min-width: 40em) {
   body .showcase__two__heading {
-    left: 35%;
+    left: 37%;
   }
 }
 @media (min-width: 64em) {
